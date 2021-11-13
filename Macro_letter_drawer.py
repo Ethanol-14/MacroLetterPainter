@@ -369,7 +369,7 @@ def draw(_character):
         time.sleep(delay)
         ink(-1, 0, fontsize)
         time.sleep(delay)
-        lift(0, -1, fontsize)
+        lift(0, -2, fontsize)
     count = count+1
 
     #a
@@ -530,7 +530,7 @@ def draw(_character):
         time.sleep(delay)
         ink(-2, 4, fontsize)
         time.sleep(delay)
-        ink(0, -4, fontsize)
+        lift(0, -4, fontsize)
     count = count+1
 
     #c
@@ -547,7 +547,7 @@ def draw(_character):
         time.sleep(delay)
         ink(1, 0, fontsize)
         time.sleep(delay)
-        ink(-2, 0, fontsize)
+        lift(-2, 0, fontsize)
     count = count+1
 
     #v
@@ -647,6 +647,8 @@ while True:
             time.sleep(delay)
 
     if keyboard.is_pressed("space"):
+        mouse.release(Button.left)
+        time.sleep(delay)
         mouse.position = (mouse.position[0]+(3*fontsize), mouse.position[1])
         while keyboard.is_pressed("space"):
             time.sleep(delay)
@@ -691,4 +693,202 @@ while True:
         draw("7")
         mouse.position = (mouse.position[0]+(3*fontsize), mouse.position[1])
         while keyboard.is_pressed("7"):
+            time.sleep(delay)
+
+    if keyboard.is_pressed("8"):
+        draw("8")
+        mouse.position = (mouse.position[0]+(3*fontsize), mouse.position[1])
+        while keyboard.is_pressed("8"):
+            time.sleep(delay)
+
+    if keyboard.is_pressed("9"):
+        draw("9")
+        mouse.position = (mouse.position[0]+(3*fontsize), mouse.position[1])
+        while keyboard.is_pressed("9"):
+            time.sleep(delay)
+
+    if keyboard.is_pressed("0"):
+        draw("0")
+        mouse.position = (mouse.position[0]+(3*fontsize), mouse.position[1])
+        while keyboard.is_pressed("0"):
+            time.sleep(delay)
+
+    if keyboard.is_pressed("q"):
+        draw("q")
+        mouse.position = (mouse.position[0]+(3*fontsize), mouse.position[1])
+        while keyboard.is_pressed("q"):
+            time.sleep(delay)
+
+    if keyboard.is_pressed("w"):
+        draw("w")
+        mouse.position = (mouse.position[0]+(3*fontsize), mouse.position[1])
+        while keyboard.is_pressed("w"):
+            time.sleep(delay)
+
+    if keyboard.is_pressed("e"):
+        draw("e")
+        mouse.position = (mouse.position[0]+(3*fontsize), mouse.position[1])
+        while keyboard.is_pressed("e"):
+            time.sleep(delay)
+
+    if keyboard.is_pressed("r"):
+        draw("r")
+        mouse.position = (mouse.position[0]+(3*fontsize), mouse.position[1])
+        while keyboard.is_pressed("r"):
+            time.sleep(delay)
+
+    if keyboard.is_pressed("t"):
+        draw("t")
+        mouse.position = (mouse.position[0]+(3*fontsize), mouse.position[1])
+        while keyboard.is_pressed("t"):
+            time.sleep(delay)
+
+    if keyboard.is_pressed("y"):
+        draw("y")
+        mouse.position = (mouse.position[0]+(3*fontsize), mouse.position[1])
+        while keyboard.is_pressed("y"):
+            time.sleep(delay)
+
+    if keyboard.is_pressed("u"):
+        draw("u")
+        mouse.position = (mouse.position[0]+(3*fontsize), mouse.position[1])
+        while keyboard.is_pressed("u"):
+            time.sleep(delay)
+
+    if keyboard.is_pressed("i"):
+        draw("i")
+        mouse.position = (mouse.position[0]+(3*fontsize), mouse.position[1])
+        while keyboard.is_pressed("i"):
+            time.sleep(delay)
+
+    if keyboard.is_pressed("o"):
+        draw("o")
+        mouse.position = (mouse.position[0]+(3*fontsize), mouse.position[1])
+        while keyboard.is_pressed("o"):
+            time.sleep(delay)
+
+    if keyboard.is_pressed("p"):
+        draw("p")
+        mouse.position = (mouse.position[0]+(3*fontsize), mouse.position[1])
+        while keyboard.is_pressed("p"):
+            time.sleep(delay)
+
+    if keyboard.is_pressed("a"):
+        draw("a")
+        mouse.position = (mouse.position[0]+(3*fontsize), mouse.position[1])
+        while keyboard.is_pressed("a"):
+            time.sleep(delay)
+
+    if keyboard.is_pressed("s"):
+        draw("s")
+        mouse.position = (mouse.position[0]+(3*fontsize), mouse.position[1])
+        while keyboard.is_pressed("s"):
+            time.sleep(delay)
+
+    if keyboard.is_pressed("d"):
+        draw("d")
+        mouse.position = (mouse.position[0]+(3*fontsize), mouse.position[1])
+        while keyboard.is_pressed("d"):
+            time.sleep(delay)
+
+    if keyboard.is_pressed("f"):
+        draw("f")
+        mouse.position = (mouse.position[0]+(3*fontsize), mouse.position[1])
+        while keyboard.is_pressed("f"):
+            time.sleep(delay)
+
+    if keyboard.is_pressed("g"):
+        draw("g")
+        mouse.position = (mouse.position[0]+(3*fontsize), mouse.position[1])
+        while keyboard.is_pressed("g"):
+            time.sleep(delay)
+
+    if keyboard.is_pressed("h"):
+        draw("h")
+        mouse.position = (mouse.position[0]+(3*fontsize), mouse.position[1])
+        while keyboard.is_pressed("h"):
+            time.sleep(delay)
+
+    if keyboard.is_pressed("j"):
+        draw("j")
+        mouse.position = (mouse.position[0]+(3*fontsize), mouse.position[1])
+        while keyboard.is_pressed("j"):
+            time.sleep(delay)
+
+    if keyboard.is_pressed("k"):
+        draw("k")
+        mouse.position = (mouse.position[0]+(3*fontsize), mouse.position[1])
+        while keyboard.is_pressed("k"):
+            time.sleep(delay)
+
+    if keyboard.is_pressed("l"):
+        draw("l")
+        mouse.position = (mouse.position[0]+(3*fontsize), mouse.position[1])
+        while keyboard.is_pressed("l"):
+            time.sleep(delay)
+
+    if keyboard.is_pressed("z"):
+        draw("z")
+        mouse.position = (mouse.position[0]+(3*fontsize), mouse.position[1])
+        while keyboard.is_pressed("z"):
+            time.sleep(delay)
+
+    if keyboard.is_pressed("x"):
+        draw("x")
+        mouse.position = (mouse.position[0]+(3*fontsize), mouse.position[1])
+        while keyboard.is_pressed("x"):
+            time.sleep(delay)
+
+    if keyboard.is_pressed("c"):
+        draw("c")
+        mouse.position = (mouse.position[0]+(3*fontsize), mouse.position[1])
+        while keyboard.is_pressed("c"):
+            time.sleep(delay)
+
+    if keyboard.is_pressed("v"):
+        draw("v")
+        mouse.position = (mouse.position[0]+(3*fontsize), mouse.position[1])
+        while keyboard.is_pressed("v"):
+            time.sleep(delay)
+
+    if keyboard.is_pressed("b"):
+        draw("b")
+        mouse.position = (mouse.position[0]+(3*fontsize), mouse.position[1])
+        while keyboard.is_pressed("b"):
+            time.sleep(delay)
+
+    if keyboard.is_pressed("n"):
+        draw("n")
+        mouse.position = (mouse.position[0]+(3*fontsize), mouse.position[1])
+        while keyboard.is_pressed("n"):
+            time.sleep(delay)
+
+    if keyboard.is_pressed("m"):
+        draw("m")
+        mouse.position = (mouse.position[0]+(3*fontsize), mouse.position[1])
+        while keyboard.is_pressed("m"):
+            time.sleep(delay)
+
+    if keyboard.is_pressed(","):
+        draw(",")
+        mouse.position = (mouse.position[0]+(3*fontsize), mouse.position[1])
+        while keyboard.is_pressed(","):
+            time.sleep(delay)
+
+    if keyboard.is_pressed("."):
+        draw(".")
+        mouse.position = (mouse.position[0]+(3*fontsize), mouse.position[1])
+        while keyboard.is_pressed("."):
+            time.sleep(delay)
+
+    if keyboard.is_pressed("-"):
+        draw("-")
+        mouse.position = (mouse.position[0]+(3*fontsize), mouse.position[1])
+        while keyboard.is_pressed("-"):
+            time.sleep(delay)
+
+    if keyboard.is_pressed("'"):
+        draw("'")
+        mouse.position = (mouse.position[0]+(3*fontsize), mouse.position[1])
+        while keyboard.is_pressed("'"):
             time.sleep(delay)
