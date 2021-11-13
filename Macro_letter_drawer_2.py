@@ -9,18 +9,14 @@ mouse = ButCon()
 print("Type font size (not accurate to word)")
 fontsize = input()
 fontsize = int(fontsize)
-print("Put your mouse where you want the typing to start and press enter")
-input()
 
-startingxpos = mouse.position[0]
-
-delay = 0.01
+delay = 0.02
 
 def lift(_x, _y, _size):
     mouse.move(_x*_size, -_y*_size)
 
 def ink(_x, _y, _size):
-    delay = 0.01
+    delay = 0.02
     mouse.press(Button.left)
     time.sleep(delay)
     mouse.move(_x*_size, -_y*_size)
@@ -28,7 +24,7 @@ def ink(_x, _y, _size):
     mouse.release(Button.left)
 
 def draw(_character):
-    delay = 0.01
+    delay = 0.02
 
     letters = " 1234567890qwertyuiopasdfghjklzxcvbnm,.-'"
     count = 0
@@ -642,6 +638,8 @@ while True:
     print("Type what you wanna write with your mouse")
     print("Use / for enter")
     sentence = input()
+    
+    startingxpos = mouse.position[0]
 
     for i in sentence:
         if i == "/":
