@@ -12,7 +12,7 @@ fontsize = int(fontsize)
 
 delay = 0.02
 
-#not holdinh click
+#not holding click
 def lift(_x, _y, _size):
     mouse.move(_x*_size, -_y*_size)
 
