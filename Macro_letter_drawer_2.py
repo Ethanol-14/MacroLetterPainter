@@ -12,11 +12,9 @@ fontsize = int(fontsize)
 
 delay = 0.02
 
-#not holding click
 def lift(_x, _y, _size):
     mouse.move(_x*_size, -_y*_size)
 
-#holding click
 def ink(_x, _y, _size):
     delay = 0.02
     mouse.press(Button.left)
@@ -639,11 +637,16 @@ def draw(_character):
 while True:
     print("Type what you wanna write with your mouse")
     print("Use / for enter")
+    print("Press escape to stop the program")
     sentence = input()
     
     startingxpos = mouse.position[0]
 
     for i in sentence:
+        if keyboard.is_pressed("esc"):
+            print("terminated")
+            break
+        
         if i == "/":
             mouse.position = (startingxpos, mouse.position[1]+(5*fontsize))
 
